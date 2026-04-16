@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammed Adnan — Digital Growth Operator. Performance Marketing, SEO, WordPress Development & Social Media specialist based in Dubai, UAE." />
+  <title>Mohammed Adnan — Digital Growth Operator</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts: Montserrat (display) + Poppins (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Mohammed Adnan Home">
+        <span class="nav__logo-text">MA</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#expertise" class="nav__link">Expertise</a></li>
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li>
+          <button class="nav__close" id="navClose" aria-label="Close navigation menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#contact" class="nav__cta">Let's Talk</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__noise"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        <span class="hero__eyebrow-dot"></span>
+        Mohammed Adnan &nbsp;·&nbsp; Dubai, UAE
+        <span class="hero__eyebrow-dot"></span>
+      </p>
+
+      <h1 class="hero__title" aria-label="Digital Growth Operator">
+        <span class="hero__title-line" style="--i:0">DIGITAL</span>
+        <span class="hero__title-line" style="--i:1">GROWTH</span>
+        <span class="hero__title-line hero__title-line--italic" style="--i:2">OPERATOR.</span>
+      </h1>
+
+      <p class="hero__sub">
+        Where performance marketing, SEO, and web development<br class="hero__br" />
+        converge into measurable business outcomes.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#work" class="btn btn--primary">
+          View My Work
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a href="#contact" class="btn btn--ghost">
+          Let's Connect
+        </a>
+      </div>
+    </div>
+
+    <!-- Scrolling ticker -->
+    <div class="hero__ticker" aria-hidden="true">
+      <div class="hero__ticker-track">
+        <span>Paid Media</span><span class="ticker-sep">·</span>
+        <span>SEO</span><span class="ticker-sep">·</span>
+        <span>WordPress</span><span class="ticker-sep">·</span>
+        <span>Google Ads</span><span class="ticker-sep">·</span>
+        <span>Meta Ads</span><span class="ticker-sep">·</span>
+        <span>GA4 Analytics</span><span class="ticker-sep">·</span>
+        <span>WooCommerce</span><span class="ticker-sep">·</span>
+        <span>LinkedIn Ads</span><span class="ticker-sep">·</span>
+        <span>Email Marketing</span><span class="ticker-sep">·</span>
+        <span>CRO</span><span class="ticker-sep">·</span>
+        <span>Social Media</span><span class="ticker-sep">·</span>
+        <span>Content Strategy</span><span class="ticker-sep">·</span>
+        <!-- duplicate for seamless loop -->
+        <span>Paid Media</span><span class="ticker-sep">·</span>
+        <span>SEO</span><span class="ticker-sep">·</span>
+        <span>WordPress</span><span class="ticker-sep">·</span>
+        <span>Google Ads</span><span class="ticker-sep">·</span>
+        <span>Meta Ads</span><span class="ticker-sep">·</span>
+        <span>GA4 Analytics</span><span class="ticker-sep">·</span>
+        <span>WooCommerce</span><span class="ticker-sep">·</span>
+        <span>LinkedIn Ads</span><span class="ticker-sep">·</span>
+        <span>Email Marketing</span><span class="ticker-sep">·</span>
+        <span>CRO</span><span class="ticker-sep">·</span>
+        <span>Social Media</span><span class="ticker-sep">·</span>
+        <span>Content Strategy</span><span class="ticker-sep">·</span>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll down to About section">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section class="about section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Visual column -->
+        <div class="about__visual reveal reveal--left">
+          <div class="about__img-wrap">
+            <img src="MY IMG.jpg" alt="Mohammed Adnan — Digital Marketing Specialist" class="about__img" loading="lazy" width="480" height="560" />
+            <div class="about__img-frame" aria-hidden="true"></div>
+          </div>
+
+          <div class="about__stats" aria-label="Key statistics">
+            <div class="stat">
+              <span class="stat__num">2+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat__divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat__num">10+</span>
+              <span class="stat__label">Projects Delivered</span>
+            </div>
+            <div class="stat__divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat__num">3+</span>
+              <span class="stat__label">Industries Served</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content column -->
+        <div class="about__content reveal reveal--right">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title" id="about-heading">
+            A Hybrid Digital<br />Professional Based<br />in Dubai
+          </h2>
+
+          <div class="about__bio">
+            <p>
+              I'm <strong>Mohammed Adnan</strong> — a digital marketing specialist with a developer's mindset. My strength lies where <strong>performance marketing meets technical execution</strong>: I don't just plan campaigns — I build, track, and optimize them end-to-end.
+            </p>
+            <p>
+              From <strong>Google and Meta Ads</strong> to <strong>WordPress development</strong>, from <strong>SEO strategy</strong> to <strong>GA4 analytics</strong> — I operate across the full digital stack. Currently driving growth at <strong>Simal Technologies Middle East</strong> in Dubai, managing marketing, web presence, and e-commerce operations.
+            </p>
+            <p>
+              I believe the best marketers can also build — and the best builders understand marketing. That hybrid edge is what sets my work apart.
+            </p>
+          </div>
+
+          <!-- Tab navigation -->
+          <div class="tabs">
+            <div class="tabs__nav" role="tablist" aria-label="About sections">
+              <button class="tabs__btn active" role="tab" aria-selected="true" aria-controls="tab-skills" data-tab="skills">Skills</button>
+              <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-experience" data-tab="experience">Experience</button>
+              <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-education" data-tab="education">Education</button>
+            </div>
+
+            <div class="tabs__body">
+
+              <!-- Skills Panel -->
+              <div class="tabs__panel active" id="tab-skills" role="tabpanel">
+                <div class="skill-clusters">
+
+                  <div class="skill-cluster">
+                    <h4 class="skill-cluster__name">Performance Marketing</h4>
+                    <div class="skill-tags">
+                      <span>Meta Ads</span><span>Google Ads</span><span>LinkedIn Ads</span>
+                      <span>Amazon PPC</span><span>A/B Testing</span><span>ROAS Optimization</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-cluster">
+                    <h4 class="skill-cluster__name">SEO & Organic Growth</h4>
+                    <div class="skill-tags">
+                      <span>On-Page SEO</span><span>Technical SEO</span><span>Keyword Research</span>
+                      <span>Site Audits</span><span>SEMrush</span><span>Rank Math</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-cluster">
+                    <h4 class="skill-cluster__name">Web Development</h4>
+                    <div class="skill-tags">
+                      <span>WordPress</span><span>Elementor</span><span>HTML / CSS</span>
+                      <span>JavaScript</span><span>WooCommerce</span><span>Shopify</span>
+                    </div>
+                  </div>
+
+                  <div class="skill-cluster">
+                    <h4 class="skill-cluster__name">Analytics & Tools</h4>
+                    <div class="skill-tags">
+                      <span>GA4</span><span>Tag Manager</span><span>Search Console</span>
+                      <span>Mailchimp</span><span>Canva</span><span>Adobe Photoshop</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Experience Panel -->
+              <div class="tabs__panel" id="tab-experience" role="tabpanel">
+                <div class="timeline">
+
+                  <div class="timeline__item">
+                    <div class="timeline__meta">
+                      <span class="timeline__period">Nov 2024 – Present</span>
+                      <span class="timeline__badge">Full Time</span>
+                    </div>
+                    <div class="timeline__body">
+                      <h4>Digital Marketing Coordinator</h4>
+                      <p>Simal Technologies Middle East LLC · Dubai, UAE</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__meta">
+                      <span class="timeline__period">Aug 2023 – Sep 2024</span>
+                      <span class="timeline__badge">Full Time</span>
+                    </div>
+                    <div class="timeline__body">
+                      <h4>Digital Marketing Associate — Media Ops</h4>
+                      <p>Theorem Digital · Mysore, India <em>· 1 yr 2 mo</em></p>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__meta">
+                      <span class="timeline__period">Jan 2023 – Apr 2023</span>
+                      <span class="timeline__badge timeline__badge--intern">Internship</span>
+                    </div>
+                    <div class="timeline__body">
+                      <h4>Web Developer Intern</h4>
+                      <p>VeriTech Software IT Services · Pune, India <em>· 4 mo</em></p>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__meta">
+                      <span class="timeline__period">Aug 2022 – Oct 2022</span>
+                      <span class="timeline__badge timeline__badge--intern">Internship</span>
+                    </div>
+                    <div class="timeline__body">
+                      <h4>Technical Support Intern</h4>
+                      <p>LGB Forge Limited · Mysore, India <em>· 3 mo</em></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Education Panel -->
+              <div class="tabs__panel" id="tab-education" role="tabpanel">
+                <div class="timeline">
+
+                  <div class="timeline__item">
+                    <div class="timeline__meta">
+                      <span class="timeline__period">2020 – 2023</span>
+                    </div>
+                    <div class="timeline__body">
+                      <h4>Bachelor of Computer Applications (BCA)</h4>
+                      <p>St Joseph's First Grade College</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__meta">
+                      <span class="timeline__period">2018 – 2020</span>
+                    </div>
+                    <div class="timeline__body">
+                      <h4>Senior Secondary — Commerce</h4>
+                      <p>St Joseph's Pre-University College</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline__item">
+                    <div class="timeline__meta">
+                      <span class="timeline__period">2008 – 2018</span>
+                    </div>
+                    <div class="timeline__body">
+                      <h4>Secondary Education — CBSE</h4>
+                      <p>Baden Powell Public School</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <a href="Mohammed Adnan Resume .pdf" download class="btn btn--primary btn--sm about__resume-btn">
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
+            Download Resume
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EXPERTISE / SERVICES
+  ══════════════════════════════════════════ -->
+  <section class="expertise section" id="expertise" aria-labelledby="expertise-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title" id="expertise-heading">Expertise &amp; Services</h2>
+        <p class="section-desc">
+          A hybrid specialist across the full digital stack — from paid campaigns to web builds to analytics.
+        </p>
+      </div>
+
+      <div class="expertise__grid">
+
+        <article class="exp-card reveal">
+          <div class="exp-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="exp-card__title">Performance Marketing</h3>
+          <p class="exp-card__desc">Data-driven paid campaigns across Meta, Google, LinkedIn &amp; Amazon. Precision targeting, ongoing optimisation, and a relentless focus on reducing CPC while scaling ROAS.</p>
+          <ul class="exp-card__tags" aria-label="Tools and platforms">
+            <li>Meta Ads</li><li>Google Ads</li><li>LinkedIn Ads</li><li>Amazon PPC</li>
+          </ul>
+          <a href="#work" class="exp-card__link">
+            See Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <article class="exp-card reveal">
+          <div class="exp-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h3 class="exp-card__title">SEO &amp; Organic Growth</h3>
+          <p class="exp-card__desc">End-to-end SEO execution: keyword research, technical audits, on-page refinement, and off-page strategy — with proven rankings for competitive search terms.</p>
+          <ul class="exp-card__tags">
+            <li>On-Page SEO</li><li>Technical SEO</li><li>SEMrush</li><li>Rank Math</li>
+          </ul>
+          <a href="#work" class="exp-card__link">
+            See Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <article class="exp-card reveal">
+          <div class="exp-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 class="exp-card__title">Web Development</h3>
+          <p class="exp-card__desc">Fast, responsive, SEO-optimised websites and landing pages built with WordPress, Elementor, and custom HTML/CSS/JS — designed for conversions, not just looks.</p>
+          <ul class="exp-card__tags">
+            <li>WordPress</li><li>WooCommerce</li><li>HTML / CSS</li><li>JavaScript</li>
+          </ul>
+          <a href="#work" class="exp-card__link">
+            See Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <article class="exp-card reveal">
+          <div class="exp-card__icon" aria-hidden="true">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <h3 class="exp-card__title">Social Media &amp; Content</h3>
+          <p class="exp-card__desc">Full social management across Instagram, Facebook, LinkedIn, and TikTok. Platform-native content, community building, creative production, and paid social execution.</p>
+          <ul class="exp-card__tags">
+            <li>Content Strategy</li><li>Reels</li><li>Community Growth</li><li>Canva</li>
+          </ul>
+          <a href="#work" class="exp-card__link">
+            See Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <article class="exp-card reveal">
+          <div class="exp-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="exp-card__title">Analytics &amp; Marketing Ops</h3>
+          <p class="exp-card__desc">Full measurement infrastructure — GA4, Tag Manager, Search Console, and email automation. Turning raw data into a clear picture of what's working and what to do next.</p>
+          <ul class="exp-card__tags">
+            <li>GA4</li><li>Tag Manager</li><li>Mailchimp</li><li>UTM Tracking</li>
+          </ul>
+          <a href="#work" class="exp-card__link">
+            See Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <article class="exp-card reveal">
+          <div class="exp-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <h3 class="exp-card__title">E-commerce &amp; CRO</h3>
+          <p class="exp-card__desc">Optimising storefronts and product listings on Amazon, WooCommerce, and Sharaf DG. Improving conversion rates through UX refinement, A/B testing, and funnel strategy.</p>
+          <ul class="exp-card__tags">
+            <li>Amazon</li><li>WooCommerce</li><li>CRO</li><li>Funnel Strategy</li>
+          </ul>
+          <a href="#work" class="exp-card__link">
+            See Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       WORK / PROJECTS
+  ══════════════════════════════════════════ -->
+  <section class="work section" id="work" aria-labelledby="work-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title" id="work-heading">Projects &amp; Campaigns</h2>
+        <p class="section-desc">
+          A curated showcase of campaigns, websites, and creative work — strategy made visible.
+        </p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="work-tabs reveal" role="tablist" aria-label="Work categories">
+        <button class="work-tab active" role="tab" aria-selected="true" aria-controls="panel-web-dev" data-panel="web-dev">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <span>Web Dev</span>
+        </button>
+        <button class="work-tab" role="tab" aria-selected="false" aria-controls="panel-social" data-panel="social">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span>Social Media</span>
+        </button>
+        <button class="work-tab" role="tab" aria-selected="false" aria-controls="panel-seo" data-panel="seo">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <span>SEO</span>
+        </button>
+        <button class="work-tab" role="tab" aria-selected="false" aria-controls="panel-design" data-panel="design">
+          <i class="fa-solid fa-palette" aria-hidden="true"></i>
+          <span>Design</span>
+        </button>
+        <button class="work-tab" role="tab" aria-selected="false" aria-controls="panel-paid-ads" data-panel="paid-ads">
+          <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+          <span>Paid Ads</span>
+        </button>
+      </div>
+
+      <!-- ── Web Dev Panel ── -->
+      <div class="work-panel active" id="panel-web-dev" role="tabpanel">
+        <div class="projects-grid">
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">Web Development</span>
+              <span class="proj-card__year">2024 – Present</span>
+            </div>
+            <h3 class="proj-card__title">Simal Technologies Website</h3>
+            <p class="proj-card__desc">Built the full company website using WordPress + Elementor. Custom HTML/CSS, integrated contact forms, analytics setup, and comprehensive on-page SEO optimisation for a Dubai-based IT distributor.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-wordpress" aria-hidden="true"></i> WordPress</span>
+              <span><i class="fa-solid fa-code" aria-hidden="true"></i> HTML / CSS</span>
+              <span><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> SEO Optimised</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="Website 1.png" target="_blank" class="proj-img" aria-label="View website page 1">
+                <img src="Website 1.png" alt="Simal Technologies Website — Page 1" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="Website 2.png" target="_blank" class="proj-img" aria-label="View website page 2">
+                <img src="Website 2.png" alt="Simal Technologies Website — Page 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="website 3.png" target="_blank" class="proj-img" aria-label="View website page 3">
+                <img src="website 3.png" alt="Simal Technologies Website — Page 3" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">Landing Page</span>
+              <span class="proj-card__year">2024</span>
+            </div>
+            <h3 class="proj-card__title">Product Promo Landing Page — Crucial SSD</h3>
+            <p class="proj-card__desc">High-converting product landing page built with Elementor Pro for a Meta Ads campaign. Included full conversion tracking setup, mobile optimisation, and a CTA flow designed to maximise click-to-lead rate.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Elementor Pro</span>
+              <span><i class="fa-brands fa-meta" aria-hidden="true"></i> Meta Ads Ready</span>
+              <span><i class="fa-solid fa-tags" aria-hidden="true"></i> Tracking Setup</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="Website Promo 2.png" target="_blank" class="proj-img">
+                <img src="Website Promo 2.png" alt="Product Promo Landing Page" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="Website Promo 3.png" target="_blank" class="proj-img">
+                <img src="Website Promo 3.png" alt="Product Promo Page — Section 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">Freelance</span>
+              <span class="proj-card__year">2023</span>
+            </div>
+            <h3 class="proj-card__title">Freelance Client Portfolio Website</h3>
+            <p class="proj-card__desc">Designed and launched a fully mobile-responsive portfolio site with interactive galleries, optimised contact forms, and custom CSS/JS enhancements. Built for a personal brand client on WordPress.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-wordpress" aria-hidden="true"></i> WordPress</span>
+              <span><i class="fa-solid fa-mobile" aria-hidden="true"></i> Mobile First</span>
+              <span><i class="fa-solid fa-sliders" aria-hidden="true"></i> Custom JS</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="Freelance.png" target="_blank" class="proj-img">
+                <img src="Freelance.png" alt="Freelance Website — Page 1" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="freelance 2.png" target="_blank" class="proj-img">
+                <img src="freelance 2.png" alt="Freelance Website — Page 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="freelance 3.png" target="_blank" class="proj-img">
+                <img src="freelance 3.png" alt="Freelance Website — Page 3" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── Social Media Panel ── -->
+      <div class="work-panel" id="panel-social" role="tabpanel">
+        <div class="projects-grid">
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">Social Media · Brand Launch</span>
+              <span class="proj-card__year">Jul 2025 – Present</span>
+            </div>
+            <h3 class="proj-card__title">
+              Baby Clothing Brand —
+              <a href="https://www.instagram.com/alittlepotent/" target="_blank" rel="noopener" class="proj-card__link-inline">@alittlepotent</a>
+            </h3>
+            <p class="proj-card__desc">Built social media presence from zero for a newly launched baby clothing brand. Established brand aesthetic, designed content calendar, created Reels, and drove initial audience engagement — all within the first weeks of launch.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</span>
+              <span><i class="fa-solid fa-palette" aria-hidden="true"></i> Content Design</span>
+              <span><i class="fa-solid fa-chart-simple" aria-hidden="true"></i> Meta Insights</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="potent 1.jpg" target="_blank" class="proj-img">
+                <img src="potent 1.jpg" alt="Baby Clothing Brand Content 1" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="potent 2.jpg" target="_blank" class="proj-img">
+                <img src="potent 2.jpg" alt="Baby Clothing Brand Content 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="fashion brand .jpg" target="_blank" class="proj-img">
+                <img src="fashion brand .jpg" alt="Baby Clothing Brand Overview" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">Social Media · Paid Campaigns</span>
+              <span class="proj-card__year">Jun 2025 – Present</span>
+            </div>
+            <h3 class="proj-card__title">
+              Sultan Sheep Farming —
+              <a href="https://www.instagram.com/sultansheep_mys/" target="_blank" rel="noopener" class="proj-card__link-inline">@sultansheep_mys</a>
+            </h3>
+            <p class="proj-card__desc">Managed content strategy and paid Meta Ads for a livestock farming page. Combined organic posts with targeted campaigns, resulting in a <strong>40% increase in page reach</strong> and significantly higher inquiry volume via Facebook lead forms.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-facebook" aria-hidden="true"></i> Meta Ads</span>
+              <span><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i> +40% Reach</span>
+              <span><i class="fa-solid fa-users" aria-hidden="true"></i> Lead Generation</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="Sultan 1.jpg" target="_blank" class="proj-img">
+                <img src="Sultan 1.jpg" alt="Sultan Sheep — Content 1" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="Sultan 2 .jpg" target="_blank" class="proj-img">
+                <img src="Sultan 2 .jpg" alt="Sultan Sheep — Content 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="Sultan 3.jpg" target="_blank" class="proj-img">
+                <img src="Sultan 3.jpg" alt="Sultan Sheep — Content 3" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">Social Media · Multi-Platform</span>
+              <span class="proj-card__year">Nov 2024 – Present</span>
+            </div>
+            <h3 class="proj-card__title">Simal Technologies — Social Media Management</h3>
+            <p class="proj-card__desc">Multi-platform social strategy for a UAE tech distributor across Facebook, Instagram, and LinkedIn. Platform-native content formats led to a <strong>45% increase in monthly impressions</strong> and <strong>20% more direct inquiries</strong>.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</span>
+              <span><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</span>
+              <span><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i> +45% Impressions</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="simal 1 .jpg" target="_blank" class="proj-img">
+                <img src="simal 1 .jpg" alt="Simal Social Media Content 1" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="simal 2.jpg" target="_blank" class="proj-img">
+                <img src="simal 2.jpg" alt="Simal Social Media Content 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="simal 3.jpg" target="_blank" class="proj-img">
+                <img src="simal 3.jpg" alt="Simal Social Media Content 3" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── SEO Panel ── -->
+      <div class="work-panel" id="panel-seo" role="tabpanel">
+        <div class="projects-grid projects-grid--single">
+
+          <article class="proj-card proj-card--wide reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">SEO · Organic Search</span>
+              <span class="proj-card__year">2024 – 2025</span>
+            </div>
+            <h3 class="proj-card__title">Simal Technologies — Organic Search Growth</h3>
+            <p class="proj-card__desc">Executed a full SEO overhaul for Simal Technologies' website. Targeted competitive keywords in the UAE tech distribution space, improving site architecture, metadata, and content quality to achieve top rankings.</p>
+
+            <div class="seo-results">
+              <div class="seo-result">
+                <span class="seo-result__value">+20%</span>
+                <span class="seo-result__label">Organic Traffic in 3 Months</span>
+              </div>
+              <div class="seo-result">
+                <span class="seo-result__value">-15%</span>
+                <span class="seo-result__label">Bounce Rate Reduction</span>
+              </div>
+              <div class="seo-result">
+                <span class="seo-result__value">Top 5</span>
+                <span class="seo-result__label">Ranked Keywords (UAE)</span>
+              </div>
+            </div>
+
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-google" aria-hidden="true"></i> Search Console</span>
+              <span><i class="fa-solid fa-chart-bar" aria-hidden="true"></i> GA4</span>
+              <span><i class="fa-solid fa-crosshairs" aria-hidden="true"></i> SEMrush</span>
+              <span><i class="fa-solid fa-ranking-star" aria-hidden="true"></i> Rank Math</span>
+            </div>
+
+            <div class="proj-card__highlight">
+              <p>Keywords ranked: <strong>"Best IT Distributor UAE"</strong> · <strong>"UGREEN Distributor UAE"</strong> · category-level terms in May 2025</p>
+            </div>
+
+            <a href="SEO.jpg" target="_blank" class="proj-card__screenshot" aria-label="View SEO rankings screenshot">
+              <img src="SEO.jpg" alt="SEO Rankings — Google Search Console Screenshot" loading="lazy" />
+              <div class="proj-card__screenshot-label">
+                <i class="fa-solid fa-expand" aria-hidden="true"></i> View Screenshot
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── Design Panel ── -->
+      <div class="work-panel" id="panel-design" role="tabpanel">
+        <p class="section-sub-desc reveal">
+          Creative work produced in-house using Canva and Adobe Photoshop — social ads, banners, product visuals, and campaign creatives designed for performance.
+        </p>
+        <div class="design-gallery reveal">
+          <a href="Design 1.png" target="_blank" class="dg-item" aria-label="Creative design 1">
+            <img src="Design 1.png" alt="Creative Design — Social Media Ad 1" loading="lazy" />
+            <div class="dg-item__overlay"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+          </a>
+          <a href="Design 2.png" target="_blank" class="dg-item" aria-label="Creative design 2">
+            <img src="Design 2.png" alt="Creative Design — Social Media Ad 2" loading="lazy" />
+            <div class="dg-item__overlay"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+          </a>
+          <a href="Design 3.png" target="_blank" class="dg-item" aria-label="Creative design 3">
+            <img src="Design 3.png" alt="Creative Design — Banner 3" loading="lazy" />
+            <div class="dg-item__overlay"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+          </a>
+          <a href="design 4.png" target="_blank" class="dg-item" aria-label="Creative design 4">
+            <img src="design 4.png" alt="Creative Design — Infographic 4" loading="lazy" />
+            <div class="dg-item__overlay"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+          </a>
+          <a href="desing 5.png" target="_blank" class="dg-item" aria-label="Creative design 5">
+            <img src="desing 5.png" alt="Creative Design — Campaign Visual 5" loading="lazy" />
+            <div class="dg-item__overlay"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+          </a>
+          <a href="Desing 6.png" target="_blank" class="dg-item" aria-label="Creative design 6">
+            <img src="Desing 6.png" alt="Creative Design — Product Ad 6" loading="lazy" />
+            <div class="dg-item__overlay"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Paid Ads Panel ── -->
+      <div class="work-panel" id="panel-paid-ads" role="tabpanel">
+        <div class="projects-grid">
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">Meta Ads</span>
+              <span class="proj-card__year">2024 – Present</span>
+            </div>
+            <h3 class="proj-card__title">Meta Advertising Campaigns</h3>
+            <p class="proj-card__desc">Managed Facebook and Instagram ad campaigns across brand awareness, lead generation, and conversion objectives. Built custom audiences, lookalike sets, and retargeting flows for multiple clients and in-house projects.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-facebook" aria-hidden="true"></i> Meta Ads Manager</span>
+              <span><i class="fa-solid fa-filter" aria-hidden="true"></i> Custom Audiences</span>
+              <span><i class="fa-solid fa-rotate" aria-hidden="true"></i> Retargeting</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="meta 1.jpg" target="_blank" class="proj-img">
+                <img src="meta 1.jpg" alt="Meta Ads Campaign 1" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="meta 2.jpg" target="_blank" class="proj-img">
+                <img src="meta 2.jpg" alt="Meta Ads Campaign 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="meta 3.jpg" target="_blank" class="proj-img">
+                <img src="meta 3.jpg" alt="Meta Ads Campaign 3" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-card__header">
+              <span class="proj-card__cat">LinkedIn Ads · B2B</span>
+              <span class="proj-card__year">2024 – Present</span>
+            </div>
+            <h3 class="proj-card__title">LinkedIn B2B Ad Campaigns</h3>
+            <p class="proj-card__desc">Executed B2B LinkedIn ad campaigns targeting decision-makers in tech and enterprise sectors for Simal Technologies. Sponsored content and message ads focused on pipeline generation and brand authority within the UAE market.</p>
+            <div class="proj-card__meta">
+              <span><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn Ads Manager</span>
+              <span><i class="fa-solid fa-briefcase" aria-hidden="true"></i> B2B Targeting</span>
+              <span><i class="fa-solid fa-building" aria-hidden="true"></i> UAE Market</span>
+            </div>
+            <div class="proj-card__images">
+              <a href="linkedin 2.jpg" target="_blank" class="proj-img">
+                <img src="linkedin 2.jpg" alt="LinkedIn Ads Campaign 1" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+              <a href="linekdin 1.jpg" target="_blank" class="proj-img">
+                <img src="linekdin 1.jpg" alt="LinkedIn Ads Campaign 2" loading="lazy" />
+                <div class="proj-img__hover"><i class="fa-solid fa-expand" aria-hidden="true"></i></div>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section class="contact section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact__inner">
+
+        <!-- Left: info -->
+        <div class="contact__left reveal reveal--left">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="contact__title" id="contact-heading">
+            Let's Build<br />Something<br /><em>Great Together</em>
+          </h2>
+          <p class="contact__desc">
+            Open to full-time roles, freelance projects, and strategic collaborations in digital marketing, web development, and growth strategy. Based in Dubai, working globally.
+          </p>
+
+          <div class="contact__details">
+            <a href="mailto:mohamedadnandxb07@gmail.com" class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact__detail-text">
+                <span class="contact__detail-label">Email</span>
+                <span class="contact__detail-value">mohamedadnandxb07@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+971566574196" class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact__detail-text">
+                <span class="contact__detail-label">Phone</span>
+                <span class="contact__detail-value">+971 56 657 4196</span>
+              </div>
+            </a>
+            <div class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact__detail-text">
+                <span class="contact__detail-label">Location</span>
+                <span class="contact__detail-value">Dubai, UAE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__socials">
+            <a href="https://www.linkedin.com/in/md-adnan12" target="_blank" rel="noopener" class="contact__social" aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/MxdAdnan" target="_blank" rel="noopener" class="contact__social" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:mohamedadnandxb07@gmail.com" class="contact__social" aria-label="Send Email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <a href="Mohammed Adnan Resume .pdf" download class="btn btn--primary btn--sm">
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
+            Download Resume
+          </a>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact__right reveal reveal--right">
+          <form class="contact-form" id="contactForm" name="submit-to-google-sheet" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="Name" placeholder="Mohammed Abdullah" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="Email" placeholder="hello@company.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="Subject" placeholder="Project enquiry · Job opportunity · Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="Message" rows="5" placeholder="Tell me about your project or opportunity…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="footer__logo" aria-label="Back to top">MA</a>
+        <p class="footer__copy">© 2025 Mohammed Adnan · Dubai, UAE · Built with purpose.</p>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
